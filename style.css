@@ -76,6 +76,10 @@ h1 {
     text-align: center;
 }
 
+header h1 {
+    border-bottom: 2px solid grey;
+}
+
 header p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13.5px;
@@ -90,8 +94,8 @@ header p {
 .row img {
     margin: auto;
     object-fit: cover;
-    height: 200px;
-    width: 300px;
+    height: 230px;
+    width: 330px;
     text-align: center;
     padding-bottom: 10px;
 }
