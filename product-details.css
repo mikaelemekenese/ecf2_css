@@ -55,19 +55,6 @@ a {
     color: black;
 }
 
-header {
-    background: no-repeat center / 100% url("media/plates-header.jpg");
-}
-
-.header__text {
-    background-color: rgb(60, 60, 60);
-    color: white;
-    width: 50%;
-    text-align: center;
-    margin-left: 25%;
-    padding: 100px 30px 100px 30px;
-}
-
 h1 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 40px;
@@ -75,41 +62,6 @@ h1 {
     letter-spacing: -1px;
     text-align: center;
 }
-
-header h1 {
-    border-bottom: 2px solid grey;
-}
-
-header p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 13.5px;
-    font-weight: bold;
-}
-
-.container-fluid {
-    padding: 50px 0 50px 0;
-}
-
-
-.row img {
-    margin: auto;
-    object-fit: cover;
-    height: 230px;
-    width: 330px;
-    text-align: center;
-    padding-bottom: 10px;
-}
-
-h5 {
-    text-transform: uppercase;
-}
-
-.row div {
-    text-align: center;
-    height: 330px;
-}
-
-/* ---------- "Product Details" page ---------- */
 
 .breadcrumb ul {
     display: flex;
@@ -136,6 +88,7 @@ h5 {
     justify-content: center;
     align-items: center;
     padding: 10px 30px 50px 30px;
+    text-align: center;
 }
 
 .details img {
@@ -148,4 +101,9 @@ h5 {
 .details h1 {
     padding-right: 50px;
     padding-left: 50px;
+}
+
+.details__text {
+    border-bottom: 2px solid grey;
+    padding-bottom: 20px;
 }
