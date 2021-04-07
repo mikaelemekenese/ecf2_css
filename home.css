@@ -76,7 +76,7 @@ h1 {
     text-align: center;
 }
 
-header h1 {
+.header__text h1 {
     border-bottom: 2px solid grey;
 }
 
@@ -89,7 +89,6 @@ header p {
 .container-fluid {
     padding: 50px 0 50px 0;
 }
-
 
 .row img {
     margin: auto;
@@ -109,7 +108,7 @@ h5 {
     height: 330px;
 }
 
-/* "View details" and "Add to Cart" buttons appearing when hovering over the plate picture */
+/* "View details" and "Add to Cart" buttons appearing when hovering over the picture of the plate */
 
 .products {
     position: relative;
