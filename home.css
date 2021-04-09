@@ -45,7 +45,7 @@ nav {
     padding-right: 30px;
 }
 
-#cart {
+.cart {
     display: inline-block;
     margin: auto;
     width: 150px;
@@ -66,6 +66,12 @@ header {
     text-align: center;
     margin-left: 25%;
     padding: 100px 30px 100px 30px;
+    border-left: 10px solid white;
+    border-right: 10px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
@@ -74,20 +80,23 @@ h1 {
     font-weight: 500;
     letter-spacing: -1px;
     text-align: center;
-}
-
-.header__text h1 {
     border-bottom: 2px solid grey;
+    padding-bottom: 20px;
+    width: 14%;
 }
 
 header p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 13.5px;
-    font-weight: bold;
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-size: 14.5px;
+    padding-top: 10px;
 }
 
 .container-fluid {
     padding: 50px 0 50px 0;
+}
+
+.container {
+    width: 73%;
 }
 
 .row img {
@@ -121,7 +130,7 @@ h6 {
 
 .row > div {
     text-align: center;
-    height: 330px;
+    height: 350px;
 }
 
 /* "View details" and "Add to Cart" buttons appearing when hovering over the picture of the plate */

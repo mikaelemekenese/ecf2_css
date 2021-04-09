@@ -70,7 +70,7 @@ section {
 
 .cart__table {
     background-color: white;
-    padding: 100px;
+    padding: 60px 40px 60px 40px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 12.5px;
     text-transform: uppercase;
@@ -81,16 +81,41 @@ table {
     border-bottom: 1px solid #ddd;
 }
 
+.table thead th {
+    padding-bottom: 30px;
+    border-top-color: white;
+}
+
+.table th:first-child {
+    padding-left: 27px;
+}
+
+.table td, .table th {
+    vertical-align: middle;
+}
+
+.table td {
+    padding-bottom: 40px;
+}
+
 .table-striped tbody tr:nth-of-type(odd) {
     background-color: white;
 }
 
-tr {
-    padding-bottom: 50px;
-}
-
 img {
     width: 100px;
+}
+
+tr {
+    height: 150px;
+}
+
+tr:first-child {
+    height: 0px;
+}
+
+th {
+    color:rgb(171, 171, 171);
 }
 
 th:first-child {
@@ -104,13 +129,14 @@ td:nth-child(4), td:nth-child(8) {
 
 .table__products {
     margin: 0;
+    font-family: 'Calibri';
 }
 
-h7 {
-    color: rgb(171, 171, 171);
+h6 {
+    font-size: 0.95rem;
 }
 
-h8 span {
+h7, h8 span {
     color: rgb(171, 171, 171);
 }
 
@@ -124,7 +150,9 @@ h8 span {
     background-color: rgb(230, 230, 230);
     padding: 13px;
     margin-right: 2px;
-    width: 25%;
+    width: 34%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
 .table__addquantity {
@@ -136,8 +164,9 @@ h8 span {
 .table__addquantity button {
     border: none;
     margin-right: 10px;
-    padding-right: 10px;
+    padding-right: 13px;
     background-color: lightgrey;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .table__plus {
@@ -155,7 +184,8 @@ h8 span {
 }
 
 .cancel {
-    position: absolute;
+    position: relative;
+    top: 15px;
     width: 32px;
     height: 32px;
     opacity: 0.3;
@@ -226,15 +256,20 @@ label, .subtotal-value {
     align-items: center;
 }
 
+.continue {
+    text-decoration: underline;
+    padding-left: 27px;
+}
+
 .checkout {
     float: right;
     border: 0;
     margin-top: 20px;
-    padding: 6px 25px;
-    background-color: #555555;
+    padding: 25px;
+    background-color: #2e2d2d;
     color: #fff;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 12.5px;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }

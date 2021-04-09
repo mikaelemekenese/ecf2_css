@@ -124,10 +124,9 @@ h1 {
     padding-bottom: 30px;
     padding-left: 30px;
     padding-right: 30px;
-    font-size: 14.5px;
-    font-weight: bold;
+    font-size: 14px;
     color: grey;
-    font-family: 'Calibri';
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .details__buttons {
