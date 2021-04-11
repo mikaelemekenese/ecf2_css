@@ -136,13 +136,13 @@ h1 {
     background-color: rgb(230, 230, 230);
     padding: 13px;
     margin-right: 2px;
-    width: 10%;
+    width: 12%;
 }
 
 .details__addquantity {
     display: inline-flex;
     flex-direction: column;
-    width: 7%;
+    width: 9%;
 }
 
 .details__addquantity button {

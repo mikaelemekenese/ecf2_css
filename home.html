@@ -15,17 +15,55 @@
 
     <body>
         <nav>
+            <label for="mobile-menu" class="mobile-menu"><i class="fa fa-bars"></i></label>
+            <input type="checkbox" id="mobile-menu" role="button">
+
             <img class="nav__logo" src="./media/logo.png" href="#" alt="Hero Logo"/>
 
             <ul class="nav__menu">
                 <li><a href="home.html">Home</a></li>
                 <li>Shop <i class="fa fa-caret-down"></i></li>
-                <li><a href="cart.html">Journal</a></li>
+                <li><a href="#">Journal</a></li>
                 <li>More <i class="fa fa-caret-down"></i></li>
             </ul>
             
-            <div class="cart dropdown">My Cart (2) 
-                <span class="caret"></span>
+            <div class="cart">My Cart (2) <span class="caret"></span>
+                <ul class="cart-dropdown">
+                    <li>
+                        <span>
+                            <img src="./media/hand-painted-blue-flat-dish.jpg" alt="Hand Painted Blue Flat Dish" class="img-responsive">
+                        </span>
+                        <span>
+                            <span class="cart-dropdown-product">Hand Painted Blue Flat Dish <span>× 1</span></span>
+                            <span class="cart-dropdown-brand">Kiriko</span>
+                            <span class="cart-dropdown-price">$28.00</span>
+                        </span>
+                        <span><a href="#" class="cart-dropdown-cancel"></a></span>
+                    </li>
+                    <li>
+                        <span>
+                            <img src="./media/mashiko-yaki-indigo-small-plate.jpg" alt="Mashiko Yaki Indigo Small Plate" class="img-responsive">
+                        </span>
+                        <span>
+                            <span class="cart-dropdown-product">Mashiko-Yaki Indigo Small Plate <span>× 1</span></span>
+                            <span class="cart-dropdown-brand">Kiriko</span>
+                            <span class="cart-dropdown-price">$28.00</span>
+                        </span>
+                        <span><a href="#" class="cart-dropdown-cancel"></a></span>
+                    </li>
+                    <div class="cart-dropdown-total">
+                        <span>Total</span>
+                        <span>$56.00</span>
+                    </div>
+                    <div class="cart-dropdown-decision">
+                        <span>
+                            <button class="view-cart"><a href="cart.html">View Cart</a></button>
+                        </span>
+                        <span>
+                            <button class="checkout"><a href="#">Checkout</a></button>
+                        </span>
+                    </div>
+                </ul>
             </div>
         </nav>
 
