@@ -12,6 +12,8 @@ body::-webkit-scrollbar {
     display: none; /* Hide scrollbar for Chrome, Safari and Opera */
 }
 
+/* Navbar */
+
 nav {
     position: relative;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -62,6 +64,8 @@ nav label {
     display: inline-block;
     padding-right: 30px;
 }
+
+/* Shopping Cart Dropdown */
 
 .cart {
     display: inline-block;
@@ -233,6 +237,8 @@ nav label {
     color: #2e2d2d;
 }
 
+/* Jumbotron */
+
 header {
     background: no-repeat center / 100% url("media/plates-header.jpg");
     z-index: 10;
@@ -271,15 +277,19 @@ header p {
     padding-top: 10px;
 }
 
-.container-fluid {
-    padding: 50px 0 50px 0;
-}
+/* Products categories */
 
-.container {
+.products-categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
     width: 73%;
+    padding: 50px 0 50px 0;
+    margin: auto;
+    text-align: center;
 }
 
-.row img {
+.products-categories img {
     margin: auto;
     object-fit: cover;
     height: 230px;
@@ -302,15 +312,15 @@ h6 {
     letter-spacing: 1px;
 }
 
-.col-md-4 p {
+.category {
+    text-align: center;
+    height: 350px;
+}
+
+.category > p {
     font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
     color: rgb(177, 174, 174);
     font-size: 18px;
-}
-
-.row > div {
-    text-align: center;
-    height: 350px;
 }
 
 /* "View details" and "Add to Cart" buttons appearing when hovering over the picture of the plate */
