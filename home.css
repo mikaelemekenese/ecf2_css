@@ -74,6 +74,10 @@ nav label {
     height: 17px;
 }
 
+.cart__mobile {
+    display: none;
+}
+
 .cart-dropdown {
     display: none;
     list-style-type: none;
@@ -377,4 +381,130 @@ h6 {
     padding-top: 10px;
     padding-bottom: 10px;
     border: none;
+}
+
+/* --------------------------------------- MOBILE VERSION -------------------------------------- */
+
+@media screen and (max-width: 767px)
+{
+    nav {
+        display: grid;
+        grid-auto-columns: 1fr 8fr 1fr;
+        grid-auto-flow: column;
+        height: 70px;
+    }
+    
+    nav label {
+        display: inline-block;
+        text-align: right;
+    }
+
+    .nav__menu {
+        display: none;
+    }
+
+    .nav__logo {
+        text-align: center;
+    }
+
+    .cart {
+        width: 75px;
+    }
+
+    .cart__desktop {
+        display: none;
+    }
+
+    .cart__mobile {
+        display: inline-block;
+        text-align: right;
+    }
+
+    .lock {
+        border: 1px solid grey;
+        border-radius: 1px;
+        width: 20px;
+        height: 16px;
+        position: relative;
+      }
+      
+    .lock:before {
+        content: "";
+        display: block;
+        position: absolute;
+        border: 1px solid grey;
+        border-bottom-color: white; 
+        top: -14px;
+        left: 3px;
+        width: 12px;
+        height: 11px;
+        border-radius: 35px 35px 0 0;
+    }
+
+    .cart-dropdown {
+        margin-top: 5px;
+        padding: 20px;
+        width: 380px;
+        position: absolute;
+        right: 10px;
+        top: 70%;
+        float: right;
+    }
+
+    .caret {
+        visibility: hidden;
+    }
+
+    .cart:hover .cart > span:nth-child(3) {
+        border: 1px solid grey;
+    }
+
+    .checkout, .view-cart {
+        padding: 20px 30px 20px 30px;
+    }
+
+    .header__text {
+        height: 200px;
+        width: 80%;
+        margin-left: 10%;
+        padding: 100px 50px 100px 50px;
+    }
+
+    h1 {
+        font-size: 30px;
+        border-bottom: none;
+        padding: 0;
+        width: 100%;
+    }
+
+    header p {
+        padding: 0;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .products-categories {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        width: 90%;
+        padding: 50px 0 20px 0;
+    }
+
+    .products-categories img {
+        height: 184px;
+        width: 276px;
+    }
+
+    h5 {
+        font-size: 19px;
+    }
+
+    h6 {
+        padding-top: 15px;
+    }
+
+    .category p {
+        font-size: 20px;
+    }
 }

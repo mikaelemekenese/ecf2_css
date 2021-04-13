@@ -14,6 +14,9 @@
 
     <body>
         <nav>
+            <label for="mobile-menu" class="mobile-menu"><i class="fa fa-bars fa-2x"></i></label>
+            <input type="checkbox" id="mobile-menu" role="button">
+
             <img class="nav__logo" src="./media/logo.png" href="#" alt="Hero Logo"/>
 
             <ul class="nav__menu">
@@ -23,7 +26,10 @@
                 <li>More <i class="fa fa-caret-down"></i></li>
             </ul>
 
-            <div id="cart">My Cart <i class="fa fa-caret-down"></i></div>
+            <div class="cart">
+                <span class="cart__desktop">My Cart</span>
+                <span class="cart__mobile"><div class="lock"></div></span> <span class="caret"></span>
+            </div>
         </nav>
 
         <div class="header__breadcrumb">
