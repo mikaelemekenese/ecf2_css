@@ -369,6 +369,15 @@ label, .subtotal-value {
         padding-bottom: 5px;
     }
 
+    h6 {
+        font-size: 17px;
+        padding-right: 20px;
+    }
+
+    h7 {
+        font-size: 14px;
+    }
+
     .cart__table-headers {
         display: none;
     }
